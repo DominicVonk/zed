@@ -6,7 +6,7 @@ use std::{
 
 use anyhow::{Context as _, Result, anyhow};
 use futures::{FutureExt as _, future::Shared};
-use gpui::{App, AsyncApp, Entity, Task};
+use gpui::{App, AppContext as _, AsyncApp, Entity, Task};
 use project::{
     LocalProjectFlags, Project, WorktreeId,
     git_store::{Repository, resolve_git_worktree_to_main_repo, worktrees_directory_for_repo},
